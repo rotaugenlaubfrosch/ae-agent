@@ -1,0 +1,13 @@
+{
+  "name": "ae-agent",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:panel": "npm --workspace apps/panel run dev",
+    "dev:server": "npm --workspace apps/agent-server run dev",
+    "install:cep": "node scripts/install-cep-extension.mjs"
+  }
+}
